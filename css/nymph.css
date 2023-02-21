@@ -1,0 +1,21 @@
+.nymph-list1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.nymph-list1 img {
+  width: 100%;
+}
+
+.nymph-list2 img {
+  width: 100%;
+}
+
+@media (max-width: 610px) {
+  .nymph-list1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}

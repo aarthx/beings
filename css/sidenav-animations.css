@@ -1,0 +1,310 @@
+.side-angels {
+  overflow: hidden;
+}
+
+.side-angels:after {
+  content: "Angels";
+}
+
+.side-angels:after {
+  font-size: 2rem;
+  animation: angels 2s infinite;
+}
+
+@keyframes angels {
+  0% {
+    content: "Angels";
+  }
+  25% {
+    transform: skew(0deg);
+  }
+  40% {
+    transform: skew(-90deg);
+    text-shadow: 20px 2px 2px yellow;
+  }
+  95% {
+    content: "BE NOT AFRAID";
+    transform: skew(23deg);
+    text-shadow: 2px 2px 2px red;
+  }
+  100% {
+    content: "Angels";
+    transform: skew(0deg);
+  }
+}
+
+.side-mermaids:after {
+  content: "Mermaids";
+  color: white;
+  pointer-events: none;
+}
+
+.side-mermaids:hover:after {
+  content: "Mermaids";
+}
+
+.side-mermaids {
+  background: darkblue;
+  animation: ondas 4s ease-in-out infinite;
+}
+
+@keyframes ondas {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 27%,
+      16% 22%,
+      33% 25%,
+      54% 30%,
+      70% 30%,
+      84% 24%,
+      100% 26%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 30%,
+      15% 32%,
+      34% 33%,
+      51% 31%,
+      67% 25%,
+      84% 22%,
+      100% 23%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+.side-onis {
+  background: url("./img/oni.png") no-repeat right center,
+    url("./img/oni.png") no-repeat left center;
+  background-size: 75px;
+  color: black;
+  animation: blackblur 2s 1s alternate infinite;
+  overflow: hidden;
+}
+
+.side-onis:after {
+  content: "Onis";
+}
+
+@keyframes blackblur {
+  0% {
+    text-shadow: 0 0 72px black;
+    filter: blur(50%);
+    filter: opacity(0);
+    transform: skewX(-15deg);
+  }
+  50% {
+    transform: skewX(15deg);
+  }
+  100% {
+    text-shadow: 0;
+    color: black;
+    transform: skewX(-15deg);
+  }
+}
+
+li {
+  overflow: hidden;
+}
+
+.side-dragons {
+  color: black;
+  animation: fire 5s infinite;
+  background: url("./img/dragon.png") no-repeat bottom center;
+  background-size: 250px;
+}
+
+.side-dragons:after {
+  content: "Dragons";
+}
+
+@keyframes fire {
+  0% {
+    text-shadow: 0px -2px 4px #fff, 0px -2px 10px #ff3, 0px -10px 20px #f90,
+      0px -20px 40px #c33;
+    transform: translate3d(-20px, -20px, 0);
+  }
+  25% {
+    text-shadow: -10px 2px 4px #fff, -10px 2px 10px #ff3, -10px -10px 20px #f90,
+      0px -20px 40px #c33;
+    transform: translate3d(10px, -20px, 0px);
+  }
+  50% {
+    text-shadow: -10px 2px 4px #fff, -10px 2px 10px #ff3, -10px -10px 20px #f90,
+      0px -20px 40px #c33;
+    transform: translate3d(-20px, 20px, 0px);
+  }
+  75% {
+    text-shadow: -10px 2px 4px #fff, -10px 2px 10px #ff3, -10px -10px 20px #f90,
+      0px -20px 40px #c33;
+    transform: translate3d(20px, 20px, 0px);
+  }
+  100% {
+    text-shadow: 10px -2px 4px #fff, 10px -2px 10px #ff3, 10px -10px 20px #f90,
+      0px -20px 40px #c33;
+    transform: translate3d(-20px, -20px, 0);
+  }
+}
+
+.side-nymphs {
+  background: url("./img/nymphs.gif") no-repeat center center;
+  color: green;
+  text-shadow: 1px 1px 2px black;
+}
+
+.side-nymphs:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.side-nymphs::after {
+  content: "Nymphs";
+}
+
+.side-elementals {
+  animation: elementals 3s infinite;
+  background: url("./img/air.png") no-repeat top left,
+    url("./img/earth.png") no-repeat top right,
+    url("./img/fire.png") no-repeat bottom left,
+    url("./img/water.png") no-repeat bottom right;
+  background-size: 50px;
+}
+
+.side-elementals::after {
+  content: "Elementals";
+}
+
+@keyframes elementals {
+  0% {
+    text-shadow: 2px 2px 2px brown;
+    filter: blur(0.6);
+  }
+  25% {
+    text-shadow: 2px 2px 2px red;
+  }
+  40% {
+    text-shadow: 2px 2px 2px greenyellow;
+  }
+  95% {
+    text-shadow: 2px 2px 2px blue;
+  }
+  100% {
+    text-shadow: 2px 2px 2px brown;
+  }
+}
+
+@media (max-width: 900px) {
+  .side-nav {
+    width: 150px;
+  }
+  .side-angels {
+    background: url("./img/angel-icon.png") no-repeat center center;
+    background-size: 100px;
+  }
+  .side-angels::after {
+    display: none;
+  }
+  .side-mermaids {
+    background: url("./img/mermaid-icon.png") no-repeat center center;
+    background-size: 100px;
+    animation: none;
+  }
+  .side-mermaids::after {
+    display: none;
+  }
+  .side-onis {
+    background: url("./img/oni.png") no-repeat center center;
+    background-size: 100px;
+    animation: none;
+  }
+  .side-onis:after {
+    display: none;
+  }
+  .side-dragons {
+    background: url("./img/dragon-icon.png") no-repeat center center;
+    background-size: 100px;
+    animation: none;
+  }
+  .side-dragons:after {
+    display: none;
+  }
+  .side-elementals {
+    background: url("./img/elemental-icon.png") no-repeat center center;
+    background-size: 100px;
+    animation: none;
+  }
+  .side-elementals:after {
+    display: none;
+  }
+  .side-nymphs {
+    background: url("./img/nymph-icon.png") no-repeat center center;
+    background-size: 100px;
+    animation: none;
+  }
+  .side-nymphs:after {
+    display: none;
+  }
+  .side-nymphs:hover {
+    background: url("./img/nymph-icon.png") no-repeat center center;
+    background-size: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .side-nav {
+    width: 100px;
+  }
+  .side-angels {
+    background-size: 75px;
+  }
+  .side-mermaids {
+    background-size: 75px;
+  }
+  .side-onis {
+    background-size: 75px;
+  }
+  .side-dragons {
+    background-size: 75px;
+  }
+  .side-elementals {
+    background-size: 75px;
+  }
+  .side-nymphs {
+    background-size: 75px;
+  }
+  .side-nymphs:hover {
+    background-size: 75px;
+  }
+}
+
+@media (max-width: 410px) {
+  .side-nav {
+    width: 75px;
+  }
+  .side-angels {
+    background-size: 65px;
+  }
+  .side-mermaids {
+    background-size: 65px;
+  }
+  .side-onis {
+    background-size: 65px;
+  }
+  .side-dragons {
+    background-size: 65px;
+  }
+  .side-elementals {
+    background-size: 65px;
+  }
+  .side-nymphs {
+    background-size: 65px;
+  }
+  .side-nymphs:hover {
+    background-size: 65px;
+  }
+}

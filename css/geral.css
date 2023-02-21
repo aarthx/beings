@@ -1,0 +1,222 @@
+body {
+  font-family: "Labrada", serif;
+  height: 100vh;
+}
+
+.content-container {
+  position: relative;
+  width: calc(100% - 300px);
+  height: calc(100% - 150px);
+  background: white;
+  left: 300px;
+  top: 150px;
+  z-index: 3;
+  overflow-y: scroll;
+}
+
+.content-container::-webkit-scrollbar {
+  border-left: 2px solid black;
+}
+
+.content-container::-webkit-scrollbar-thumb {
+  background-color: black;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 20px;
+}
+
+.header h1,
+.header p,
+.header h2,
+.header ul * {
+  animation: scaleIn ease-in 1s;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.header h1 {
+  font-size: 3.5rem;
+  padding: 20px;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  padding: 20px;
+}
+
+.header p {
+  font-size: 1.5rem;
+  padding: 20px;
+  line-height: 2.5rem;
+  text-align: justify;
+}
+
+.imagem-principal {
+  padding: 20px;
+}
+
+.imagem-principal img {
+  position: relative;
+  width: 100%;
+  filter: brightness(0.2);
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+}
+
+.citacao-container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.citacao {
+  padding: 100px;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  color: white;
+  z-index: 2;
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+}
+
+.gira-letra {
+  margin-left: 50px;
+  width: 3rem;
+}
+
+.olhos a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.olho-container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+}
+
+.olhos img {
+  width: 100%;
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+}
+
+.iris {
+  position: absolute;
+  margin-bottom: 20px;
+  width: 10%;
+  height: 15%;
+  border-radius: 50%;
+  background: black;
+  z-index: 4;
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 900px) {
+  .content-container {
+    width: calc(100% - 150px);
+    height: calc(100% - 150px);
+    left: 150px;
+    top: 150px;
+  }
+  .iris {
+    position: static;
+  }
+}
+
+@media (max-width: 500px) {
+  .content-container {
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    left: 100px;
+    top: 100px;
+  }
+}
+
+@media (max-width: 410px) {
+  .content-container {
+    width: calc(100% - 75px);
+    height: calc(100% - 75px);
+    left: 75px;
+    top: 75px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .citacao {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .citacao {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .citacao {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .citacao {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+  .imagem-principal img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .citacao {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .citacao {
+    font-size: 1rem;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header h1 {
+    font-size: 2rem;
+    padding: 20px;
+  }
+
+  .header h2 {
+    font-size: 2rem;
+    padding: 20px;
+  }
+
+  .header p {
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 20px;
+    line-height: 2.5rem;
+    text-align: justify;
+  }
+}

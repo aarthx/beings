@@ -1,0 +1,161 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-nav-container {
+  position: fixed;
+  width: 100%;
+  background: white;
+}
+
+.side-nav-container {
+  position: fixed;
+  height: 100%;
+  top: 150px;
+}
+
+.main-nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  border-bottom: 2px solid black;
+  box-sizing: border-box;
+}
+
+.main-nav .logo {
+  font-size: 7rem;
+  font-weight: bold;
+  margin-left: 50px;
+  letter-spacing: 10px;
+  margin-bottom: 20px;
+}
+
+.main-nav .logo a {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.main-nav li.logo {
+  padding: 30px;
+}
+
+.main-nav li.olhos {
+  height: 100%;
+  width: 100px;
+  border-left: 2px solid black;
+  box-sizing: border-box;
+}
+
+.main-nav a {
+  width: 100%;
+  height: 100%;
+}
+
+.side-nav {
+  height: calc(100vh - 150px);
+  max-height: 100%;
+  width: 300px;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.side-nav li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% / 5);
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.side-nav li:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.side-nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 650px) {
+  .main-nav .logo {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-left: 50px;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+  }
+  .gira-letra {
+    margin-left: 30px;
+    width: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-nav {
+    height: 100px;
+  }
+  .main-nav .logo {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: 30px;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+  }
+  .gira-letra {
+    margin-left: 30px;
+    width: 2rem;
+  }
+  .side-nav {
+    height: calc(100vh - 100px);
+  }
+  .side-nav-container {
+    position: fixed;
+    height: 100%;
+    top: 100px;
+  }
+}
+
+@media (max-width: 410px) {
+  .main-nav {
+    height: 75px;
+  }
+  .main-nav .logo {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+  }
+  .gira-letra {
+    margin-left: 15px;
+    width: 1.5rem;
+  }
+  .side-nav {
+    height: calc(100vh - 75px);
+  }
+  .side-nav-container {
+    position: fixed;
+    height: 100%;
+    top: 75px;
+  }
+  .main-nav li.logo {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .main-nav .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+    margin: 0px;
+  }
+}
