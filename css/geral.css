@@ -201,7 +201,7 @@ body {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .header h1 {
     font-size: 2rem;
     padding: 20px;
