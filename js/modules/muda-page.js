@@ -9,7 +9,7 @@ export default class MudaPage {
   alteraPagina(e) {
     e.preventDefault();
     this.pageContainer.scrollTop = 0;
-    fetch(`../pages/${e.currentTarget.classList[0]}.html`)
+    fetch(`./pages/${e.currentTarget.classList[0]}.html`)
       .then((response) => response.text())
       .then((response) => {
         this.pageContainer.innerHTML = response;

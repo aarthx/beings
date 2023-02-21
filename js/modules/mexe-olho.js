@@ -8,7 +8,6 @@ export default class MexeOlho {
   }
 
   irisSegue(e) {
-    console.log("ativou");
     this.olho.style.left = `${e.clientX / 150 + 30}px`;
     this.olho.style.top = `${e.clientY / 250 + 20}px`;
   }
