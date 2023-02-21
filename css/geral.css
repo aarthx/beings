@@ -157,6 +157,15 @@ body {
   }
 }
 
+@media (max-height: 450px) {
+  .content-container {
+    width: calc(100% - 75px);
+    height: calc(100% - 75px);
+    left: 75px;
+    top: 75px;
+  }
+}
+
 @media (max-width: 1150px) {
   .citacao {
     font-size: 2rem;

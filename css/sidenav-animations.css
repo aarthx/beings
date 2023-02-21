@@ -308,3 +308,74 @@ li {
     background-size: 65px;
   }
 }
+
+@media (max-height: 450px) {
+  .side-nav {
+    width: 75px;
+  }
+  .side-angels {
+    background: url("./img/angel-icon.png") no-repeat center center;
+  }
+  .side-angels::after {
+    display: none;
+  }
+  .side-mermaids {
+    background: url("./img/mermaid-icon.png") no-repeat center center;
+    animation: none;
+  }
+  .side-mermaids::after {
+    display: none;
+  }
+  .side-onis {
+    background: url("./img/oni.png") no-repeat center center;
+    animation: none;
+  }
+  .side-onis:after {
+    display: none;
+  }
+  .side-dragons {
+    background: url("./img/dragon-icon.png") no-repeat center center;
+    animation: none;
+  }
+  .side-dragons:after {
+    display: none;
+  }
+  .side-elementals {
+    background: url("./img/elemental-icon.png") no-repeat center center;
+    animation: none;
+  }
+  .side-elementals:after {
+    display: none;
+  }
+  .side-nymphs {
+    background: url("./img/nymph-icon.png") no-repeat center center;
+    animation: none;
+  }
+  .side-nymphs:after {
+    display: none;
+  }
+  .side-nymphs:hover {
+    background: url("./img/nymph-icon.png") no-repeat center center;
+  }
+  .side-angels {
+    background-size: 40px;
+  }
+  .side-mermaids {
+    background-size: 40px;
+  }
+  .side-onis {
+    background-size: 40px;
+  }
+  .side-dragons {
+    background-size: 40px;
+  }
+  .side-elementals {
+    background-size: 40px;
+  }
+  .side-nymphs {
+    background-size: 40px;
+  }
+  .side-nymphs:hover {
+    background-size: 40px;
+  }
+}

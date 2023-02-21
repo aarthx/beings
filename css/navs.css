@@ -158,3 +158,27 @@ a {
     letter-spacing: 10px;
   }
 }
+
+@media (max-height: 450px) {
+  .main-nav {
+    height: 75px;
+  }
+  .main-nav .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+    margin: 0;
+  }
+  .gira-letra {
+    margin-left: 15px;
+    width: 1.5rem;
+  }
+  .side-nav {
+    height: calc(100vh - 75px);
+  }
+  .side-nav-container {
+    position: fixed;
+    height: 100%;
+    top: 75px;
+  }
+}
