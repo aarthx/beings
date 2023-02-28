@@ -116,7 +116,7 @@ a {
     width: 2rem;
   }
   .side-nav {
-    height: calc(100vh - 100px);
+    height: calc(100dvh - 100px);
   }
   .side-nav-container {
     position: fixed;
@@ -139,7 +139,7 @@ a {
     width: 1.5rem;
   }
   .side-nav {
-    height: calc(100vh - 75px);
+    height: calc(100dvh - 75px);
   }
   .side-nav-container {
     position: fixed;
@@ -174,7 +174,7 @@ a {
     width: 1.5rem;
   }
   .side-nav {
-    height: calc(100vh - 75px);
+    height: calc(100dvh - 75px);
   }
   .side-nav-container {
     position: fixed;
